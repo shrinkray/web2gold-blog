@@ -1,7 +1,6 @@
-# Project Lego 
+# Roots.io Sage Starter Theme 
 
-Starter theme, built with [Sage](https://roots.io/sage/) 8.5.1 by the development team at [Ainsley & Co.](https://ainsleyagency.com)
-
+Starter theme, built with [Sage](https://roots.io/sage/) 8.5.1 
 ## Extras
 
 - Holder.js for prototyping. Generate placeholders with `<img src="holder.js/300x200">`
