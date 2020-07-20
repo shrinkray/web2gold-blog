@@ -8,7 +8,7 @@
 *.bak
 *.swp
 Thumbs.db
-,htaccess
+*.htaccess
 
 # local host
 local-adminer-r1toUE7Y-.php
@@ -101,6 +101,7 @@ wp-content/uploads/wp-migrate-db/*
 **/config.codekit3
 **/.bowerrc
 /wp-content/themes/web2gold-theme/package-lock.json
+**/package-lock.json
 
 # large/disallowed file types
 # a CDN should be used for these
