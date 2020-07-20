@@ -1,0 +1,132 @@
+{
+    "key": "group_59f0902d3794a",
+    "title": "Header Customization",
+    "fields": [
+        {
+            "key": "field_59f09b716b2ad",
+            "label": "Use the hard-coded image or a new image?",
+            "name": "default_image",
+            "type": "radio",
+            "instructions": "NOTE: This has not been implemented yet. Please ignore this panel for now.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "coded": "Use the hard-coded image",
+                "new": "Use a new image"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "coded",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59f09073f2200",
+            "label": "Background Image",
+            "name": "background_image",
+            "type": "image",
+            "instructions": "Please add your header image here. This customization enables you to revise the header area without involving the developer. In the future, I recommend adding the logo and other images separately. When you are ready for that I will include those options here which will include code changes in the template. PLEASE add your image Alt description. It will appear with the image when rendered on the page.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59f09b716b2ad",
+                        "operator": "==",
+                        "value": "new"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59f09ae76b2ac",
+            "label": "Add Alt Text to Image",
+            "name": "image_alt_attr",
+            "type": "textarea",
+            "instructions": "If the hard-coded image does not display, we want to provide information that is conveyed by this image. Setting this value is also useful for SEO information.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59f09b716b2ad",
+                        "operator": "==",
+                        "value": "coded"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_59f0aaa3a5766",
+            "label": "Hard-coded Image:",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59f09b716b2ad",
+                        "operator": "==",
+                        "value": "coded"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p>This image was brought in from your theme.<\/p>\r\n<img src=\"\/wp-content\/themes\/ultralatch-theme\/dist\/images\/tdc-header.jpg\" width=\"100%\" class=\"img-fluid d-flex mx-auto\">",
+            "new_lines": "",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1511272771
+}

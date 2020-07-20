@@ -1,0 +1,101 @@
+.content-info {
+  color: $white;
+  padding: $jumbotron-padding 0;
+  background: #091b28;
+
+  p {
+    color: $brand-info;
+  }
+
+  .footer-logo {
+    width: 150px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    a {
+      padding: .5em 0;
+      display: block;
+      border: 1px solid transparent;
+      border-bottom-right-radius: 0.5rem;
+      transition: border .5s ease;
+      &:hover {
+        border: 1px solid white;
+
+      }
+    }
+  }
+  .social-nav { // move up slightly to align with other headings
+    margin-top: -5px;
+  }
+  a {
+    &:hover {
+      border-bottom: 0;
+    }
+  }
+}
+// Newsletter banner
+.cta-news {
+  border: 1px solid $blue;
+  border-left: 0;
+  border-right: 0;
+  background-image: linear-gradient(rgba(0,19,33,1), rgba(19,49,71,1)); // moved from JS since no background image
+
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+.mt-35 {
+  margin-top: 1rem;
+}
+.justify-self-start {
+  justify-self: flex-start;
+}
+.justify-self-end {
+  justify-self: flex-end;
+}
+.ctct-form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+  .ctct-button {
+    position: absolute;
+    top: -10px;
+  }
+  label {
+    color: $gray-light;
+  }
+}
+.ctct-form-wrapper {
+  text-align: center;
+  .ctct-submit {
+    margin-left: 1rem;
+  }
+  .ctct-email {
+    padding: 0.4rem;
+  }
+  .ctct-form abbr {
+    margin-right: 0.3rem;
+    color: #bb2d25;
+  }
+}
+//@media ( max-width: 576px )
+@include media-breakpoint-down(sm) {
+  .form-group {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .ctct-form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

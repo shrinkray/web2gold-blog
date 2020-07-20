@@ -1,0 +1,274 @@
+//W2Gold
+
+
+.static-header {
+  max-height: 225px;
+}
+.header {
+  background: -webkit-linear-gradient(180deg, #133147,#173851 27%,#225074 67%,#406c91 94%);
+  background: -o-linear-gradient(top, #133147,#173851 27%,#225074 67%,#406c91 94%);
+  background: -ms-linear-gradient(top, #133147,#173851 27%,#225074 67%,#406c91 94%);
+  background: -moz-linear-gradient(top, #133147,#173851 27%,#225074 67%,#406c91 94%);
+  background: linear-gradient(180deg, #133147,#173851 27%,#225074 67%,#406c91 94%);
+}
+
+@media (max-width: 1200px) {
+  .main-nav {
+    background-image: none;
+    background: white;
+  }
+}
+
+// Ultralatch Styles
+.navbar {
+  .navbar-brand img {
+    height: 75px;
+    width: auto;
+    max-width: 100%;
+  }
+  background-image: -webkit-linear-gradient( top,rgb(247, 219, 111) 0%, rgb(243, 203, 44) 2%, rgb(241, 196, 15) 49%, rgb(238, 179, 16) 50%, rgb(243, 156, 17) 100%);
+  background-image: -moz-linear-gradient( top,#f7db6f 0%, #f3cb2c 2%, #f1c40f 49%, #eeb310 50%, #f39c11 100%);
+  background-image: -o-linear-gradient( top,#f7db6f 0%, #f3cb2c 2%, #f1c40f 49%, #eeb310 50%, #f39c11 100%);
+  background-image: -ms-linear-gradient( top,#f7db6f 0%, #f3cb2c 2%, #f1c40f 49%, #eeb310 50%, #f39c11 100%);
+  background-image: linear-gradient( to bottom,rgb(247, 219, 111) 0%, rgb(243, 203, 44) 2%, rgb(241, 196, 15) 49%, rgb(238, 179, 16) 50%, rgb(243, 156, 17) 100%);
+  //background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(247, 219, 111)), color-stop(2%, rgb(243, 203, 44)), color-stop(49%, rgb(241, 196, 15)), color-stop(50%, rgb(238, 179, 16)), color-stop(100%, rgb(243, 156, 17)));
+
+  padding: 0.1rem 0;
+}
+
+
+.navbar {
+  .nav-link {
+
+  }
+}
+.navbar-toggler {
+  align-self: flex-end;
+}
+.navbar-toggler-right {
+  top: -5.4rem;
+  right: 0;
+}
+.navbar-toggler-icon {
+  width: 3em;
+  height: 2.5em;
+
+}
+.bg-inverse .dropdown-menu {
+  background: lighten($inverse-bg, 5%);
+}
+.topmenu {
+  background-color: transparent;
+  width: 100%;
+  .social-nav {
+    .stack {
+      margin: 5px 0;
+    }
+  }
+  .fa-shopping-cart {
+    color: $brand-primary;
+    font-size: 22px;
+  }
+}
+
+@nclude media-breakpoint-up(xl) {
+  .main-nav {
+    background: $white;
+    width: 100%;
+    background-image: linear-gradient(180deg,rgb(247, 219, 111) 0,rgb(243, 203, 44) 2%,rgb(241, 196, 15) 49%,rgb(238, 179, 16) 50%,rgb(243, 156, 17));
+    & > .container {
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .main-nav {
+    background-image: linear-gradient(180deg,rgb(247, 219, 111) 0,rgb(243, 203, 44) 2%,rgb(241, 196, 15) 49%,rgb(238, 179, 16) 50%,rgb(243, 156, 17));
+    & > .container {
+      width: 100%;
+    }
+  }
+}
+
+.brand-logo {
+  width: 70%;
+  height: auto;
+  margin: 1rem 0;
+}
+.navbar-nav {
+  padding: 0 15px;
+}
+// MEGA MENU
+#mega-menu-wrap-primary_navigation {
+
+  .mega-menu-toggle {
+    height: 0;
+    // close block (mobile)
+    &.mega-menu-open {
+      .mega-toggle-block-1:before {
+        font-size: 30px;
+        margin-right: 4px;
+      }
+    }
+    .mega-toggle-blocks-right {
+     // width: 90px;
+      position: absolute;
+      top: -3.2rem;
+      right: 0;
+      margin-right: 11px;
+      border: 1px solid #fff;
+      padding: 0 .6rem 0 1rem;
+      border-radius: 50px;
+      transition: 0.5s background ease;
+
+
+      // fixes bug where mega menu toggle button link
+      // expanded to full height of viewport
+      height: 40px !important;
+      &:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+    }
+    .mega-toggle-block-1:before {
+      font-size: 40px;
+      font-weight: 300;
+      float: right;
+    }
+    &.mega-menu-close {
+      display: none;
+    }
+  }
+}
+.mega-sticky-wrapper {
+  #mega-menu-wrap-primary_navigation {
+    .mega-menu-toggle {
+      height: 40px;
+      background: rgba(white, 0.8);
+      .mega-toggle-block-right {
+        position: fixed;
+        top: 0;
+        right: 2rem;
+      }
+    }
+  }
+}
+
+@media ( min-width: 1200px ) {
+
+}
+@include media-breakpoint-up(xl) { // 1200px
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main-nav {
+    background-image: -webkit-linear-gradient( top,rgb(247, 219, 111) 0%, rgb(243, 203, 44) 2%, rgb(241, 196, 15) 49%, rgb(238, 179, 16) 50%, rgb(243, 156, 17) 100%);
+    background-image: -moz-linear-gradient( top,#f7db6f 0%, #f3cb2c 2%, #f1c40f 49%, #eeb310 50%, #f39c11 100%);
+    background-image: -o-linear-gradient( top,#f7db6f 0%, #f3cb2c 2%, #f1c40f 49%, #eeb310 50%, #f39c11 100%);
+    background-image: -ms-linear-gradient( top,#f7db6f 0%, #f3cb2c 2%, #f1c40f 49%, #eeb310 50%, #f39c11 100%);
+    background-image: linear-gradient( to bottom,rgb(247, 219, 111) 0%, rgb(243, 203, 44) 2%, rgb(241, 196, 15) 49%, rgb(238, 179, 16) 50%, rgb(243, 156, 17) 100%);
+    .container {
+      //margin: 0;
+      //padding: 0;
+      //width: 100%;
+    }
+  }
+}
+@include media-breakpoint-down(md){
+  .navbar-collapse {
+    //display: block;
+  }
+  .navbar-toggleable-md>.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  // before scrolling at header, control how menu displays
+  #mega-menu-wrap-primary_navigation {
+    #mega-menu-primary_navigation {
+      & > .mega-menu-item {
+        width: 30%;
+        float: left;
+        clear: right;
+      }
+    }
+  }
+
+  // comes into play when user has scrolled below header
+  .mega-sticky-wrapper {
+    #mega-menu-wrap-primary_navigation {
+      .mega-menu-toggle {
+        height: 40px;
+        //background: rgba(black, 0.8);
+        .mega-toggle-block-right {
+          position: fixed;
+          top: 0;
+          width: 88px;
+        }
+        .mega-toggle-block-1 {
+          &::before {
+            color: white;
+          }
+          &::after {
+            color: white;
+          }
+        }
+      }
+      #mega-menu-primary_navigation {
+        background: rgba(white, 0.9);
+        .mega-menu-item {
+          width: 30%;
+          float: left;
+          clear: right;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+
+}
+
+@include media-breakpoint-down(md) {
+  .navbar-toggleable-md>.container {
+    margin-left: initial;
+    margin-right: initial;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .mega-sticky-wrapper {
+    #mega-menu-wrap-primary_navigation {
+      .mega-menu-toggle {
+        height: 40px;
+        background: rgba(white, 0.8);
+        .mega-toggle-block {
+          //height: auto !important;
+        }
+        .mega-toggle-block-right {
+          position: fixed;
+          top: 0;
+          height: auto;
+        }
+      }
+      #mega-menu-primary_navigation {
+        background: rgba(white, 0.9);
+        .mega-menu-item {
+          width: 50%;
+          float: left;
+          clear: right;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-between(sm, lg) {
+
+  #mega-menu-wrap-primary_navigation #mega-menu-primary_navigation > li.mega-menu-item {
+    display: inline-block;
+    width: 50%;
+  }
+  #mega-menu-wrap-primary_navigation {
+    width: 100%;
+  }
+}

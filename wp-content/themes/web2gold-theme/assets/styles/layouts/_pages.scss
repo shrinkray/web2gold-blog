@@ -1,0 +1,320 @@
+
+
+// FONTS
+h1 {
+  font-weight: 700;
+  font-family: Montserrat, "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+h2, h3 {
+  font-weight: 400;
+  font-family: Montserrat, "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+.card-title {
+  font-size: 1.7rem;
+}
+
+// Lower Right Corner
+.break-block {
+  border-bottom-right-radius: 25px;
+}
+
+// This sets the diagonal; the best way was with a solid color rather than a pattern.
+// Problem was in the border pattern.
+// This has a JavaScript callout in main.js
+
+.cta-diagonal {
+  background-size: cover;
+}
+.cta-list {
+  background-color: rgb(236, 238, 239);
+
+  border-top: 1px solid #BCB8B4;
+  border-bottom: 1px solid #BCB8B4;
+  margin-bottom: $block;
+
+  .fa {
+    margin-right: .5rem;
+  }
+}
+.d-flex .fa-check {
+  font-size: 2rem;
+}
+h4.light {
+  font-weight: 300 !important;
+}
+
+
+
+//@media ( max-width: 991px )
+@include media-breakpoint-down(md) {
+  .wrap {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .jumbo {
+    width: 100%;
+  }
+}
+
+
+// All Pages & Secondary Template Mods
+
+
+a {
+  color: lighten(saturate($link-color, 10%), 20%);
+  font-weight: 700;
+  &:hover {
+    text-decoration: none;
+    color: $link-hover-color;
+    border-bottom: 1px solid $link-hover-color;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+  }
+  //&:visited {
+  //color: darken($link-hover-color, 10%);
+  //}
+}
+h1, h2, h3, h4 {
+  &> a {
+    font-weight: 400;
+    &:hover {
+      border-bottom: 0;
+    }
+  }
+}
+.block {
+  margin-bottom: $block;
+}
+.block-title {
+  margin: 0 0 2rem 0;
+}
+.cta-block {
+  //border-top: 1px solid $gray-light;
+  //border-bottom: 1px solid $gray-light;
+  background: $gray-lighter;
+  padding-bottom: 1rem;
+}
+.card {
+  border: 1px solid lighten($blue, 10%);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 2rem;
+  &:hover {
+    box-shadow: 0 0 3px 3px rgba(44,62,80,0.3);
+  }
+  .image-block {
+    display: flex;
+    justify-content: center;
+    background-color: $brand-primary;
+    position: relative;
+    a {
+      display: inline-block;
+      border-bottom: 0;
+    }
+    img {
+      opacity: 1;
+      display: inline-block;
+      &:hover {
+        transition: opacity .25s ease-in-out;
+        opacity: 0.2;
+      }
+    }
+  }
+  .over-image {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    color: $white;
+    font-weight: 500;
+    padding-right: 10px;
+
+  }
+}
+
+// max-height used with checkScrollHeightOverflow() in main.js
+article {
+  .card-title {
+    max-height: 2.2em;
+  }
+}
+.card-block {
+  padding: 1rem 1rem 0;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  line-height: 1.1em;
+  max-height: 2.2em;
+  overflow: hidden;
+}
+// adds Font Awesome icon to Blog post meta
+.flex-meta {
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: $gray;
+  time {
+    &::before {
+      font-family: "FontAwesome";
+      content: "\f017"; // clock
+      text-transform: lowercase;
+      color: $gray-light;
+      margin-right: .5em;
+      font-size: .8rem;
+    }
+  }
+  .byline {
+    margin-bottom: 0;
+    .fn {
+      font-size: 0.7rem;
+      color: $gray;
+      &:hover {
+        color: darken($gray, 20%);
+      }
+    }
+    &::before {
+      //font-family: "FontAwesome";
+      //content: "\f040"; // pencil
+      //text-transform: lowercase;
+      //color: $gray-light;
+      //margin-right: .5em;
+      //font-size: .8rem;
+    }
+  }
+}
+.cat {
+  margin-bottom: 1.2rem;
+  &:before {
+    font-family: "FontAwesome";
+    content: "\f0c1"; // link
+    color: $gray-light;
+    margin-right: .4em;
+    font-size: .7rem;
+  }
+}
+.fa-tag { // tag
+  text-transform: lowercase;
+  color: $gray-light;
+  margin-right: 0.2rem;
+  font-size: 0.8rem;
+}
+.post-btn {
+  text-transform: uppercase;
+  font-size: .8rem;
+  &:hover {
+    text-decoration: none;
+  }
+  &:after {
+    font-family: "FontAwesome";
+    content: "\f105"; // angle-right
+    text-transform: lowercase;
+    color: lighten($brand-primary, 30%);
+    margin-left: .5em;
+    font-size: .8rem;
+  }
+}
+
+// MEDIA & BREAK BOX
+.rounded {
+  border-radius: $border-radius-sm;
+}
+
+.break-block {
+  padding: 40px;
+  //border-top: 1px solid $gray-light;
+  //border-bottom: 1px solid $gray-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+  &:before {
+    content: '\f10d';
+    font-family: "FontAwesome";
+    font-size: 4rem;
+    align-self: flex-start;
+    color: rgba($gray-light, 0.5);
+    line-height: 0;
+  }
+  &:after {
+    content: '\f10e';
+    font-family: "FontAwesome";
+    align-self: flex-end;
+    font-size: 4rem;
+    color: rgba($gray-light, 0.5);
+    line-height: 0;
+  }
+  blockquote {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    width: 100%;
+  }
+  .credit {
+    align-self: flex-end;
+    margin-right: 4rem;
+  }
+}
+
+.standard-block {
+  .block {
+    img {
+      margin-top: 0.5rem;
+    }
+  }
+
+  ol, ul {
+    li {
+      line-height: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+     ol, ul {
+      margin: 1rem 0;
+    }
+  }
+}
+.prop-icon {
+  margin-top: 0.6rem;
+}
+
+.prop {
+  padding-left: 15px !important;
+  width: 75%;
+}
+// A standard 'return to top' customization
+.go-top {
+  margin: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: rgba($brand-primary, 0.3);
+  display: none;
+  z-index: 10000;
+  &:hover {
+    color: rgba($brand-primary, 0.9);
+  }
+  .fixed-btn {
+    font-size: 60px;
+    padding: 0 10px;
+  }
+}
+
+@media screen and ( max-width: 768px ) {
+  .prop {
+    padding-left: 0 !important;
+  }
+  .prop-icon {
+    margin-bottom: .5rem;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .main {
+    //padding: 0;
+  }
+}
+@media (min-width: 576px) {
+  .alignleft {
+    margin-right: 2rem;
+  }
+}

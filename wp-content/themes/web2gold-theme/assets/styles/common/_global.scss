@@ -1,0 +1,60 @@
+
+// remove outer padding around container -- needed for larger widths
+
+.container {
+  padding: 0;
+}
+
+.wrap.container {
+  padding-top: 2rem;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.main-nav {
+  .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+// Created new margin top style for Submit positioning ( HD )
+.mt-45 {
+  margin-top: 2rem !important;
+}
+// For standard-block bottom margin
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+.mb-2 {
+  margin-bottom: 2rem !important;
+}
+.mb-3 {
+  margin-bottom: 3rem !important;
+}
+.mb-4 {
+  margin-bottom: 4rem !important;
+}
+.mb-5 {
+  margin-bottom: 5rem !important;
+}
+.mb-6 {
+  margin-bottom: 6rem !important;
+}
+
+

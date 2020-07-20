@@ -1,0 +1,105 @@
+// Search form
+.search-form {
+  @extend .form-inline;
+}
+.search-form label {
+  font-weight: normal;
+  @extend .form-group;
+}
+.search-form .search-field {
+  @extend .form-control;
+}
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+// Search Widget
+.sidebar {
+  @include media-breakpoint-down(lg) {
+    .widget_search .btn {
+      border: 0;
+      //padding: 5px;
+    }
+    .widget_search input {
+      margin-bottom: 15px;
+    }
+  }
+}
+// Gravity Forms
+
+// Email
+.gform_wrapper {
+  label {
+    &.gfield_label {
+      color: darken($gray-light, 10%) !important;
+      font-size: 1rem;
+    }
+  }
+}
+.contact-us-form_wrapper, .gf-form-wrapper {
+  padding: 0.5rem 2rem 2rem;
+  background: #d9edff;
+
+  .gfield {
+    display: flex;
+    flex-direction: column;
+    &.gf_list_inline {
+      //display: block;
+      flex-wrap: wrap;
+    }
+    &.gf_list_2col {
+      .gfield_checkbox li label {
+        overflow: visible;
+      }
+    }
+  }
+  ul.gfield_checkbox li  {
+    display: block;
+  }
+}
+// fixes Booking speakers form element where 'other' row
+.ginput_container input[type=text] {
+  display: inline-block !important;
+}
+
+.cta-newsletter {
+
+  .gform_wrapper {
+    display: inline-flex !important;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    width: 100%;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .gform_body {
+      //width: 50% !important;
+      .large {
+        padding: .5rem !important;
+      }
+    }
+    .gform_footer {
+      width: initial ;
+    }
+  }
+
+
+    @media only screen and ( max-width: 640px ) {
+    .gform_wrapper {
+      display: flex !important;
+      flex-flow: column wrap;
+      align-items: center;
+      .gform_footer {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    }
+      .gform_body {
+        width: 100% !important;
+      }
+
+  }
+}

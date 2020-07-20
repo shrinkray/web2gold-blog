@@ -1,0 +1,121 @@
+{
+    "key": "group_5b18812bbbbac",
+    "title": "Contact Us Page Column Layouts",
+    "fields": [
+        {
+            "key": "field_5b188aea3cb71",
+            "label": "Page Layout",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b1881809f4ba",
+            "label": "Contact Us Page Column Layouts",
+            "name": "contact_us_page_column_layouts",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5b1881b56a1ad": {
+                    "key": "5b1881b56a1ad",
+                    "name": "row_layout",
+                    "label": "Row Layout",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b1935b687a6d",
+                            "label": "Column Layouts",
+                            "name": "column_layouts",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "field_5b1881f39f4bb",
+                            "min": 1,
+                            "max": 1,
+                            "layout": "row",
+                            "button_label": "+ Add Column",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b1881f39f4bb",
+                                    "label": "WYSIWYG Editor",
+                                    "name": "wysiwyg_editor",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "single-col",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "basic",
+                                    "media_upload": 1,
+                                    "delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "+ Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-contact.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "Contact Us Page -- Flexible Layout",
+    "modified": 1528385322
+}

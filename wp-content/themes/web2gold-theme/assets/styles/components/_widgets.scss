@@ -1,0 +1,9 @@
+
+@include media-breakpoint-only(sm) {
+  #wp-calendar {
+    max-width: 50%;
+  }
+}
+#wp-calendar {
+  width: 100%;
+}

@@ -1,0 +1,48 @@
+
+// added drop shadow and radius per customer request.
+
+
+@include media-breakpoint-up(xl) {
+  .jumbotron {
+
+  }
+}
+@include media-breakpoint-up(lg) {
+  /* Container */
+
+  .jumbo {
+
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  slick-slider {
+    overflow: visible;
+  }
+  .slick-slide {
+    border-radius: 0 0 35px 0;
+    img {
+      border-radius: 0 0 35px 0;
+      box-shadow: 2px 2px 8px rgba($brand-primary, 0.3);
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+  .jumbotron {
+    padding:0;
+  }
+  .jumbo.container {
+    padding: 0;
+  }
+}
+@include  media-breakpoint-down(md) {
+  .caption-right, .caption-left, .caption-center {
+    left: 15%;
+    right: 15%;
+  }
+}
+@include media-breakpoint-down(xs) {
+  .jumbotron {
+    display: none;
+  }
+}

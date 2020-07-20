@@ -1,0 +1,78 @@
+
+// Golden CTA buttons
+.cta-brand, .btn-primary, .gform_button, .ctct-submit {
+  $brandShadow : darken($brand-primary, 20%);
+  $infoShadow : darken($brand-info, 20%);
+  border-radius: 0;
+  background-color: $brand-info;
+  border-color: $brand-info;
+  box-shadow: 0 5px 0px 0 darken($brand-info, 10%);
+  padding: .4rem 1.5rem .4rem;
+  color: $gray-lightest;
+  text-shadow: 2px 2px 2px rgba( $infoShadow, 0.9);
+  &:hover {
+    background-color: lighten($brand-info, 10%);
+    border-color: $brand-info;
+    box-shadow: 0 5px 0px 0 darken(darken($brand-info, 10%), 10%);
+    color: $brand-primary;
+    //text-shadow: 2px 2px 2px rgba( $brandShadow, 0.9);
+
+  }
+}
+
+// Blue CTA buttons & link
+.cta-explore {
+  $exploreShadow : darken($brand-primary, 10%);
+  border-radius: 0;
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+  box-shadow:none;
+  padding: .4rem 1.5rem .3rem;
+  color: $gray-lightest;
+  transition: all 0.3s ease-in-out;
+  white-space: normal;
+  &:hover, &:focus {
+    background-color: darken($brand-primary, 10%);
+    border-color: $brand-primary;
+    box-shadow: none;
+    color: $white;
+    text-shadow: 3px 3px 3px rgba($exploreShadow, 0.9);
+  }
+  &:visited {
+    @extend .cta-explore;
+  }
+}
+.cta-simple {
+  color: $brand-primary;
+  padding: .4rem 1.5rem .3rem;
+  &:after {
+    content: '\f105';
+    font-family: FontAwesome;
+    padding-left: .5rem;
+  }
+}
+
+// Jumbotron Lead Button - Pill Style
+.lead {
+  .btn-pill {
+    border-radius: 50px;
+    border: 2px solid $brand-primary;
+    background-color: white !important;
+    box-shadow: none;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: $brand-primary !important;
+    text-transform: uppercase;
+    padding: .4rem 1.5rem;
+    &:hover {
+      transition: background-color 0.5s ease;
+      background-color: darken($brand-primary, 15%) !important;
+      color: white !important;
+
+
+    }
+  }
+  .btn-box {
+    // same as standard button
+  }
+}

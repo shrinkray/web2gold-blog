@@ -1,0 +1,191 @@
+{
+    "key": "group_5b15a1f7d832e",
+    "title": "Footer Invitation Form for Constant Contact",
+    "fields": [
+        {
+            "key": "field_5b15a1f7dccc5",
+            "label": "Invitation",
+            "name": "invitation",
+            "type": "radio",
+            "instructions": "Please review the options shown. You may disable this Opt-in invitation row or just remove the form.  The background color is part of the theme at this time.  Note: the pattern options from UltraLatch Theme have been removed in this part. They were not compatible with this background color.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "Keep the form and background",
+                "2": "Keep the background but remove the form",
+                "3": "Remove it all"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": 1,
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5b15a1f7dcd1a",
+            "label": "Heading",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b15a1f7dccc5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b15a1f7dcd6d",
+            "label": "Section Title",
+            "name": "section_title",
+            "type": "text",
+            "instructions": "An optional title for this section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b15a1f7dccc5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Join Our Newsletter",
+            "placeholder": "Join Our Newsletter",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b15a1f7dcdc0",
+            "label": "Welcome Message",
+            "name": "welcome_message",
+            "type": "textarea",
+            "instructions": "Twenty or fewer words should be enough to stir interest.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b15a1f7dccc5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5b15a1f7dce12",
+            "label": "Form Elements",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b15a1f7dccc5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b15a1f7dcc6a",
+            "label": "Constant Contact",
+            "name": "constant_contact",
+            "type": "number",
+            "instructions": "Enter the number from your Constant Contact shortcode. It might look like this: [ctct form=\"626\"]. Just enter 626 in the field.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5b15a5000cd24",
+            "label": "Email Help Message",
+            "name": "email_help_message",
+            "type": "text",
+            "instructions": "Give a reassurance about how their emails will be used. Leave it blank to skip.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "We'll never share your email with anyone else.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 6,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "This appears above the footer area; Setup in Theme Settings",
+    "modified": 1528145395
+}
